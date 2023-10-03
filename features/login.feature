@@ -9,6 +9,7 @@ Feature: Test the functionality of the login page,the connect button
     When I insert "unregistered@yahoo.com" email
     And I insert a password
     And I click the connect button
+    And I click the cookies button
     Then Error is displayed
 
   Scenario: Check that "Eroare: Date incorecte." error message is displayed when user tries to login without providing an email address
@@ -16,6 +17,7 @@ Feature: Test the functionality of the login page,the connect button
     When I insert " " email
     And I insert a password
     And I click the connect button
+    And I click the cookies button
     Then Error is displayed
 
   Scenario: Check that "Eroare: Date incorecte." error message is displayed when user tries to login without providing a password
@@ -23,6 +25,7 @@ Feature: Test the functionality of the login page,the connect button
     When I insert "unregistered@yahoo.com" email
     And I insert " " password
     And I click the login button
+    And I click the cookies button
     Then Error is displayed
 
   Scenario: Check that "Eroare: Date incorecte." error message is displayed when user tries to login with invalid format email
@@ -30,4 +33,5 @@ Feature: Test the functionality of the login page,the connect button
     When I insert "invalid" email
     And I insert a password
     And I click the login button
+    And I click the cookies button
     Then Error is displayed
