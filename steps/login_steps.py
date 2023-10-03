@@ -11,7 +11,7 @@ def step_impl(context, email):
     context.login_page.insert_email(email)
 
 
-@when("I insert a password")
+@when('I insert a password')
 def step_impl(context):
     context.login_page.insert_password()
 
