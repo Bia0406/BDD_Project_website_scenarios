@@ -17,8 +17,11 @@ class LoginPage(BasePage):
     def insert_email(self, email):
         self.insert(locator=self.EMAIL_BTN, text=email)
 
-    def insert_password(self):
+    def insert_any_password(self):
         self.insert(locator=self.PASSWORD_BTN, text="123456")
+
+    def insert_valid_password(self):
+        self.insert(locator=self.PASSWORD_BTN, text="bia0406")
 
     def click_login_button(self):
         self.click(locator=self.CONNECT_BTN)

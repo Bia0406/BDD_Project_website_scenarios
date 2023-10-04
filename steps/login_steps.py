@@ -11,9 +11,9 @@ def step_impl(context, email):
     context.login_page.insert_email(email)
 
 
-@when('I insert a password')
+@when('I insert any password')
 def step_impl(context):
-    context.login_page.insert_password()
+    context.login_page.insert_any_password()
 
 
 @when("I click the connect button")
@@ -30,5 +30,9 @@ def step_impl(context):
 def step_impl(context):
     context.login_page.error_msg_is_displayed()
 
+
+@when('I insert valid password')
+def step_impl(context):
+    context.login_page.insert_valid_password()
 
 
