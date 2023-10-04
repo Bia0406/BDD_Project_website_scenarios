@@ -36,3 +36,9 @@ def step_impl(context):
     context.login_page.insert_valid_password()
 
 
+@then('The main page is displayed')
+def step_impl(context):
+    context.login_page.main_page_is_displayed()
+
+
+

@@ -54,3 +54,10 @@ Feature: Test the functionality of the login page,the connect button
     And I click the connect button
     Then Error is displayed
 
+    # Scenariu 7
+    Scenario: Check that main page is displayed when user login with registered email address and valid password
+    Given I am on the login page
+    When I insert "bia83192@gmail.com" email
+    And I insert valid password
+    And I click the connect button
+    Then The main page is displayed

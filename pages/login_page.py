@@ -32,3 +32,5 @@ class LoginPage(BasePage):
     def error_msg_is_displayed(self):
         assert self.is_displayed(locator=self.ERROR_MSG)
 
+    def main_page_is_displayed(self):
+        self.is_url_correct(expected_url="https://www.cel.ro/")
