@@ -15,8 +15,8 @@ class ProductsPage(BasePage):
     CRS_TREE_BTN = (By.XPATH, '//div[text()="Brazi de Craciun"]')
     SORT_BTN = (By.ID, "sortare")
     EXPENSIVE_LAPTOP = (By.XPATH, "//span[text()='Laptop Lenovo ThinkPad P1 Gen5 Intel Core i9-12900H 16inch RAM 16GB SSD 512GB nVidia RTX A5500 16GB Win 11 Pro Black 21DC0014RI']")
-    CHEAPEST_PHONE = (By.XPATH, '//span[text()="59"]')
-    EXPENSIVE_CHRISTMAS_TREE = (By.XPATH, "//span[text()='Brad artificial verde nins 4079 ramuri Aspen 3.00 m']")
+    CHEAPEST_PHONE = (By.XPATH, '//span[text()="Telefon Allview L801 Ecran TFT 1.77 Bluetooth Radio FM 2G Dual SIM Albastru"]')
+    EXPENSIVE_CHRISTMAS_TREE = (By.XPATH, '//span[text()="Brad artificial verde cu zapada Arves 170x270 cm"]')
 
     def navigate_to_first_products_page(self):
         self.browser.get(self.FIRST_BTN_PRODUCTS)
